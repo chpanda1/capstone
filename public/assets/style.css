@@ -1,70 +1,9 @@
-/* import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Roboto:wght@900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
+/* Custom styles */
 body {
-  background-color: #ffffff;
+  padding-top: 56px; /* To account for the fixed navbar height */
 }
-
-nav {
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  width: 280px;
-  background: #b6b6b6;
-  overflow: hidden;
-  transition: 1s;
-}
-
-nav:hover {
-  width: 280px;
-  transition: 1s;
-}
-
-.logo {
-  display: flex;
-  margin: 10px 0 0 10px;
-  padding-bottom: 3rem;
-}
-
-.logo span {
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-a {
-  position: relative;
-  width: 280px;
-  font-size: 14px;
-  color: rgb(2, 122, 2);
-  display: table;
-  padding: 10px;
-}
-
-nav .bi {
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.nav-item-mrf {
-  position: relative;
-  top: 12px;
-  margin-left: 10x;
+@media (max-width: 767px) {
+  body {
+    padding-top: 0; /* Remove padding on small screens */
+  }
 }

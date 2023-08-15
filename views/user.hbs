@@ -8,41 +8,88 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="" class="logo">
-              <img src="" alt="" />
-              <span>User</span>
-            </a></li>
-          <li><a href="#">
-              <i class="bi bi-speedometer2"></i>
-              <span class="nav-item-mrf">Dashboard</span>
-            </a></li>
-          <li><a href="#">
-              <i class="bi bi-chat-dots-fill"></i>
-              <span class="nav-item-mrf">Message</span>
-            </a></li>
-          <li><a href="#">
-              <i class="bi bi-database"></i>
-              <span class="nav-item-mrf">Reports</span>
-            </a></li>
-          <li><a href="#">
-              <i class="bi bi-graph-up-arrow"></i>
-              <span class="nav-item-mrf">Attendance</span>
-            </a></li>
-          <li><a href="#">
-              <i class="bi bi-sliders"></i>
-              <span class="nav-item-mrf">Settings</span>
-            </a></li>
-          <li><a href="#" class="logout">
-              <i class="bi bi-box-arrow-right"></i>
-              <span class="nav-item-mrf">Logout</span>
-            </a></li>
-        </ul>
-      </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dashboard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+          <div class="position-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Analytics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reports</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <h2>Welcome to Your Dashboard</h2>
+          <p>This is the content area of your dashboard.</p>
+        </main>
+      </div>
     </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
